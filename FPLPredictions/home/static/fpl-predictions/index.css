@@ -1,0 +1,84 @@
+html {
+    background: url('./background.jpg') no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    height: 100%;
+}
+
+.container {
+    background-color: rgb(237, 237, 237, 1);
+    opacity: 0.90;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    text-align: center;
+    width: 50%;
+    height: 100%;
+    margin: 0 auto;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 28px;
+    padding: 10px 10px 0px 10px;
+}
+
+.buttonDiv {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: space-evenly;
+    padding: 15px 0px 15px 0px;
+    vertical-align: middle;
+}
+
+.button {
+    font-family: 'Montserrat', sans-serif;
+    border-radius: 4px;
+    background-color: green;
+    color:white;
+    padding: 22px 28px;
+    opacity: 0.80;
+}
+
+.button:hover {
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+    cursor: pointer;
+    opacity: 1.0;
+  }
+
+span {
+    font-family: 'Anton', sans-serif;
+}
+
+h2 {
+    margin: 0;
+    padding-bottom: 10px;
+}
+
+.subheaderDiv {
+    font-size: 14px;
+}
+
+a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: black;
+    font-family: 'Anton', sans-serif;
+}
+
+a:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+h6 {
+    font-size: 15px;
+}
+
+#incorrectPlayersStatement {
+    padding-top: 5px;
+}
+
+#errorDiv {
+    font-size: 32px;
+}

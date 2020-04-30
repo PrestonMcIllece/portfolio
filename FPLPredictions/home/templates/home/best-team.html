@@ -1,0 +1,23 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Best Players | FPLPredictions</title>
+        <link rel="stylesheet" type="text/css" href="{% static 'fpl-predictions/index.css' %}">
+        <link href="https://fonts.googleapis.com/css?family=Montserrat:200&display=swap" rel="stylesheet">
+        <link rel="shortcut icon" href="{% static 'fpl-predictions/favicon.png' %}" type="image/x-icon">
+    </head>
+    <body>
+        <div class="container">
+            <div class="headerDiv">
+                {% csrf_token %}
+                {{ best_players }}
+            </div>
+            <div class="buttonDiv"> 
+                <form action="/">
+                    <input type="submit" value="Return home" class="button">
+                </form>
+            </div>
+        </div>
+    </body>
+</html>

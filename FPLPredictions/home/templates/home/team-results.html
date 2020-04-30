@@ -1,0 +1,29 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Your Team | FPLPredictions</title>
+        <link rel="stylesheet" type="text/css" href="{% static 'fpl-predictions/index.css' %}">
+        <link href="https://fonts.googleapis.com/css?family=Montserrat:200&display=swap" rel="stylesheet">
+        <link rel="shortcut icon" href="{% static 'fpl-predictions/favicon.png' %}" type="image/x-icon">
+    </head>
+    <body>
+        <div class="container">
+            <div class="headerDiv">
+                {% csrf_token %}
+                {{ suggestions }}
+            </div>
+            <div class="buttonDiv"> 
+                <form action="/">
+                    <input type="submit" value="Return home" class="button">
+                </form>
+            </div>
+            {% if failed_player_entries > 0 %}
+            <div class="subheaderDiv" id="incorrectPlayersStatement">
+                <h2>You entered <span>{{ failed_player_entries }}</span> players incorrectly.</h2>
+                <h4>Please click <a href="/all-players/" target="_blank">here</a> to ensure that you have the correct spellings of player names.</h4>
+            </div>
+            {% endif %}
+        </div>
+    </body>
+</html>

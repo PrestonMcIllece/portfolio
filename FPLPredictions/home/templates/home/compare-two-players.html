@@ -1,0 +1,28 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Compare Two Players | FPLPredictions</title>
+        <link rel="stylesheet" type="text/css" href="{% static 'fpl-predictions/index.css' %}">
+        <link href="https://fonts.googleapis.com/css?family=Montserrat:200&display=swap" rel="stylesheet">
+        <link rel="shortcut icon" href="{% static 'fpl-predictions/favicon.png' %}" type="image/x-icon">
+    </head>
+    <body>
+        <div class="container">
+            <div class="headerDiv">
+                <h2>Who do you want to compare?</h2>
+            </div>
+            <div class="subheaderDiv">
+                <h4>Click <a href="/all-players/" target="_blank">here</a> to ensure that you have the correct spellings of player names.</h4>
+            </div>
+            <form action="/compare-players/" method="post">
+                {% csrf_token %}
+                {{ form }}
+                <br>
+                <div class="buttonDiv">
+                    <input type="submit" value="Submit" class="button">
+                </div>
+            </form>
+        </div>
+    </body>
+</html>

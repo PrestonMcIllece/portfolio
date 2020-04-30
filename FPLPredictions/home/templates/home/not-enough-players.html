@@ -1,0 +1,25 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>ERROR | FPLPredictions</title>
+        <link rel="stylesheet" type="text/css" href="{% static 'fpl-predictions/index.css' %}">
+        <link href="https://fonts.googleapis.com/css?family=Montserrat:200&display=swap" rel="stylesheet">
+        <link rel="shortcut icon" href="{% static 'fpl-predictions/favicon.png' %}" type="image/x-icon">
+    </head>
+    <body>
+        <div class="container">
+            <div id="errorDiv">
+                <h1>ERROR!</h1>
+            </div>
+            <div class="headerDiv">
+                {{ statement }}
+            </div>
+            <div class="buttonDiv"> 
+                <form action="/">
+                    <input type="submit" value="Return home" class="button">
+                </form>
+            </div>
+        </div>
+    </body>
+</html>
