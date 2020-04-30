@@ -11,7 +11,7 @@ codecov==2.0.22
 colorama==0.4.3
 coverage==5.0.4
 cycler==0.10.0
-Django==2.2.7
+Django==2.2.10
 fpl==0.6.18
 fuzzywuzzy==0.18.0
 idna==2.8
